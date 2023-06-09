@@ -22,4 +22,16 @@ public class Aeroporto {
 	public Geo getLocal() {
 		return loc;
 	}
+	public int compareTo(Aeroporto outro){
+		return nome.compareTo(outro.getNome());
+	}
+	public String toString(){
+		StringBuilder sb = new StringBuilder(codigo);
+		sb.append("Codigo: "+codigo);
+		sb.append("Nome: "+ nome);
+		sb.append("Local "+ loc.toString());
+		return sb.toString();
+	}
+
+
 }
